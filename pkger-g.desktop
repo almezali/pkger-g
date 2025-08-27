@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=PKGER-G
+Exec=/usr/bin/pkger-g
+Icon=/usr/share/icons/pkger-gtk.png
+Type=Application
+Categories=Utility;Application;
+Comment=A Pro Package Manager
