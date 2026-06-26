@@ -4,7 +4,7 @@
 
 ---
 
-[![Version](https://img.shields.io/badge/version-1.1-blue?style=for-the-badge&logo=linux)](https://github.com/almezali/pkger-g/releases/tag/1.1)
+[![Version](https://img.shields.io/badge/version-1.1-blue?style=for-the-badge&logo=linux)](https://github.com/almezali/pkger-g/releases/tag/v1.1)
 [![GTK](https://img.shields.io/badge/GTK-4.0-green?style=for-the-badge&logo=gnome)](https://gtk.org)
 [![Python](https://img.shields.io/badge/Python-3.13+-yellow?style=for-the-badge&logo=python)](https://python.org)
 [![Arch Linux](https://img.shields.io/badge/Arch%20Linux-Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org)
