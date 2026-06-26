@@ -4,6 +4,16 @@
 
 ---
 
+[![Version](https://img.shields.io/badge/version-1.1-blue?style=for-the-badge&logo=linux)](https://github.com/almezali/pkger-g/releases/tag/1.1)
+[![GTK](https://img.shields.io/badge/GTK-4.0-green?style=for-the-badge&logo=gnome)](https://gtk.org)
+[![Python](https://img.shields.io/badge/Python-3.13+-yellow?style=for-the-badge&logo=python)](https://python.org)
+[![Arch Linux](https://img.shields.io/badge/Arch%20Linux-Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org)
+
+[![Arch](https://img.shields.io/badge/Download-pkg.tar.zst-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://github.com/almezali/pkger-g/releases/download/v1.1/pkger-1.1-1-x86_64.pkg.tar.zst)
+[![AppImage](https://img.shields.io/badge/Download-AppImage-5C5C5C?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/almezali/pkger-g/releases/download/v1.1/Pkger-x86_64.AppImage)
+
+---
+
 ## ✨ Features
 
 ### 🎯 Core Functionality
