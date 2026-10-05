@@ -4,10 +4,16 @@
 
 ---
 
-[![Version](https://img.shields.io/badge/version-1.2-teal?style=for-the-badge&logo=linux)](https://github.com/almezali/pkger-g/releases/tag/v1.2)
-[![GTK](https://img.shields.io/badge/GTK-4.0-green?style=for-the-badge&logo=gnome)](https://gtk.org)
-[![Python](https://img.shields.io/badge/Python-3.13+-yellow?style=for-the-badge&logo=python)](https://python.org)
-[![Arch Linux](https://img.shields.io/badge/Arch%20Linux-Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org)
+<p align="center">
+
+  <img src="https://img.shields.io/badge/PKGER-v1.2.2-informational?style=for-the-badge"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Arch%20Linux-GTK%204-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Built%20with-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
+  &nbsp;
+
+</p>
 
 [![Arch](https://img.shields.io/badge/Download-pkg.tar.zst-1793D1?style=for-the-badge&logo=arch-linux&logoColor=blue)](https://github.com/almezali/pkger-g/releases/download/v1.2.2/pkger-1.2.2-4-x86_64.pkg.tar.zst)
 [![AppImage](https://img.shields.io/badge/Download-AppImage-5C5C5C?style=for-the-badge&logo=linux&logoColor=yellow)](https://github.com/almezali/pkger-g/releases/download/v1.2.2/Pkger-1.2.2-4-x86_64.AppImage)
