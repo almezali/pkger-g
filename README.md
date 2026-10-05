@@ -9,8 +9,10 @@
 [![Python](https://img.shields.io/badge/Python-3.13+-yellow?style=for-the-badge&logo=python)](https://python.org)
 [![Arch Linux](https://img.shields.io/badge/Arch%20Linux-Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org)
 
-[![Arch](https://img.shields.io/badge/Download-pkg.tar.zst-1793D1?style=for-the-badge&logo=arch-linux&logoColor=blue)](https://github.com/almezali/pkger-g/releases/download/v1.2/pkger-1.2-1-x86_64.pkg.tar.zst)
-[![AppImage](https://img.shields.io/badge/Download-AppImage-5C5C5C?style=for-the-badge&logo=linux&logoColor=yellow)](https://github.com/almezali/pkger-g/releases/download/v1.2/Pkger-x86_64.AppImage)
+[![Arch](https://img.shields.io/badge/Download-pkg.tar.zst-1793D1?style=for-the-badge&logo=arch-linux&logoColor=blue)](https://github.com/almezali/pkger-g/releases/download/v1.2.2/pkger-1.2.2-4-x86_64.pkg.tar.zst)
+[![AppImage](https://img.shields.io/badge/Download-AppImage-5C5C5C?style=for-the-badge&logo=linux&logoColor=yellow)](https://github.com/almezali/pkger-g/releases/download/v1.2.2/Pkger-1.2.2-4-x86_64.AppImage)
+[![GitHub Downloads](https://img.shields.io/github/downloads/almezali/pkger-g/total?style=for-the-badge&logo=github&label=Downloads&color=blue)](https://github.com/almezali/pkger-g/releases)
+[![Latest Release Downloads](https://img.shields.io/github/downloads/almezali/pkger-g/latest/total?style=for-the-badge&label=Latest%20Downloads)](https://github.com/almezali/pkger-g/releases/latest)
 
 ---
 
