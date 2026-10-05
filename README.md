@@ -1,6 +1,11 @@
-# PKGER - Professional Package Manager
+<div align="center">
+
+# 🗃️ PKGER
 
 **A modern, feature-rich GTK package manager for Arch Linux**
+
+
+</div>
 
 ---
 
@@ -22,175 +27,141 @@
 
 ---
 
+## 📖 About
+
+**PKGER** A clean GTK 4 package manager for Arch Linux. Manage official repos, AUR, Flatpak and AppImage, track updates and system health live, and install local packages, in one clean interface.
+
+---
+
+## 📥 Installation
+
+### From the AUR
+
+```bash
+yay -S pkger-bin
+```
+
+### From the release package
+
+Download the latest `.pkg.tar.zst` from the [Releases page](https://github.com/almezali/pkger-g/releases) and install it with pacman:
+
+```bash
+sudo pacman -U pkger-1.2.2-4-x86_64.pkg.tar.zst
+```
+
+---
+
 ## ✨ Features
 
-### 🎯 Core Functionality
-- **Multi-Repository Support**: Seamlessly manage packages from official Arch repositories and AUR
-- **Advanced Search**: Fast, comprehensive package search across all repositories
-- **Smart Installation**: Automated dependency resolution and conflict handling
-- **System Updates**: One-click system-wide updates with progress tracking
-- **Local Package Support**: Install local `.pkg.tar.zst` and `.pkg.tar.xz` files
-- **Orphan Management**: Identify and remove unused packages automatically
+### 🖥️ Home Screen
 
-### 🖥️ User Interface
-- **Modern GTK Design**: Clean, responsive interface that follows system theme
-- **Tabbed Navigation**: Organized workspace with Packages, Details, Repositories, and Updates tabs
-- **Real-time Output**: Live command output with timestamps and progress indicators
-- **Detailed Package Info**: Comprehensive package details including dependencies and reverse dependencies
-- **Batch Operations**: Select and manage multiple packages simultaneously
+The Home screen shows live information about your system:
 
-### 🔧 Advanced Tools
-- **Repository Browser**: Explore packages by repository with filtering options
-- **Update Manager**: Visual update management with selective installation
-- **Cache Management**: Intelligent package cache cleaning
-- **Dependency Tracker**: Visualize package relationships and dependencies
-- **Export Functions**: Export package lists and details for backup or documentation
+| Item | What it shows |
+|---|---|
+| 🩺 System health | Quick check on how your system is doing |
+| 📦 Installed packages | Total number of packages on your system |
+| 🔄 Updates waiting | Includes a separate count for security updates |
+| 🗑️ Cache size | How much space Pacman's cache is using |
+| 🧬 Kernel version | Your current kernel, at a glance |
+| 🌐 Repositories | How many repos are set up |
+| ⏱️ Uptime & load | How long your system has been running, and how busy it is |
+| 💾 Disk & memory use | Live storage and RAM usage |
+| 🕓 Last update time | When the info was last refreshed |
 
-### 🔒 Security & Reliability
-- **Secure Authentication**: Safe sudo password handling
-- **Operation Validation**: Confirmation dialogs for critical operations
-- **Error Handling**: Robust error recovery and user feedback
-- **Background Processing**: Non-blocking operations with progress tracking
+### 📦 Package Management
 
-## 📸 Screenshots
+- Choose where packages come from:
+  - Official repos
+  - AUR
+  - Already installed packages
+  - Flatpak
+  - AppImage
+  - Developer packages
+  - Search across everything at once
+- Sort and filter by name, repo, version, or installed status.
+- Select multiple packages with checkboxes, plus **Select All** and **Clear Selection** buttons.
+- Details and action-result panels for every package.
+- Install or remove several packages in one go.
+- Pick multiple local package files with the built-in file browser:
+  - `.pkg.tar.zst`
+  - `.pkg.tar.xz`
+  - `.pkg.tar.gz`
+- Install several local files together using `pacman -U`.
 
-<div align="center">
+### 🧩 AUR Support
 
-### light Interface
-![light Interface](https://github.com/almezali/pkger-g/blob/main/Screenshot-n1.jpg)
-*Clean, intuitive package management interface*
+- Works with `yay` or `paru`, detected automatically.
+- AUR installs behave the same way as other package sources.
+- Admin permission is requested right when an AUR install starts.
+- AUR tools run as your normal user, while system changes use a separate, verified admin session.
+- Clear messages if neither `yay` nor `paru` is found.
+- Improved error messages and output when something goes wrong.
 
-### dark Interface
-![dark Interface](https://github.com/almezali/pkger-g/blob/main/Screenshot-n2.jpg)
-*Comprehensive package information and repository exploration*
+### 🌐 Sources & Repositories
 
-</div>
+- Clean card-based Sources page.
+- Repos grouped into categories, with package counts.
+- Filter packages inside a repo, including an **Installed Only** filter.
+- Sort and multi-select packages inside a repo.
+- Package details shown below the list.
+- Install or remove packages straight from the repo view.
+- Repo statistics with export support.
 
-## 🚀 Installation
+### 🔄 Updates & System Tools
 
-### From AUR (Recommended)
-```bash
-yay -S pkger-g
-```
+- Update checks run in the background.
+- Update everything, or just security updates.
+- Sync and refresh with one click.
+- System maintenance and diagnostic tools.
+- Live command output with all logs in one place.
+- AppImage scanning and management.
+- Arch Linux news without freezing the app.
 
-### Manual Installation
-```bash
-git clone https://github.com/almezali/pkger-g.git
-cd pkger-g
-chmod +x pkger-g.py
-sudo cp pkger-g.py /usr/local/bin/pkger-g
-```
-### Run
-```bash
-pkger-g
-```
-### Direct Run
-```bash
-python3 pkger_g.py
-```
-## 📋 System Requirements
+---
 
-### Required Dependencies
-- **Python**: 3.6 or newer
-- **PyGObject**: Python GTK bindings
-- **GTK**: 3.0 or newer
-- **pacman**: Arch Linux package manager
-- **sudo**: Administrative privileges support
+## 🔐 Security
 
-### Optional Dependencies
-- **yay**: AUR package management (recommended)
-- **pactree**: Dependency tree visualization
-- **xdg-utils**: Homepage opening functionality
+- Admin login window built with GTK4.
+- Password is hidden while typing and cleared right after verification.
+- Passwords are never saved, logged, passed as command arguments, or stored anywhere.
+- Sudo access is verified through standard input with `sudo -S -v`.
+- Package actions then run with `sudo -n`, relying on the temporary sudo session.
+- Doas actions use `doas -n` and require existing permission or a saved policy.
+- Admin approval is requested whenever install, remove, or update actions need it.
 
-### Installation Commands
-```bash
-# Install required dependencies
-sudo pacman -S python python-gobject gtk3
+---
 
-# Install optional dependencies
-sudo pacman -S pacman-contrib  # for pactree
-yay -S yay                     # for AUR support
-```
+## ⚙️ Stability & Performance
 
-## 🎮 Usage
+- Package actions, AUR commands, repo refreshes, searches, update checks, data loading, news fetching, and AppImage scans all run in the background.
+- The interface stays responsive during long tasks.
+- Two package actions can't accidentally run at the same time, and you get a clear message if one is already running.
+- A time limit stops commands from hanging forever.
+- Better error handling and clearer output overall.
 
-### Launch Application
-```bash
-pkger-g
-```
+---
 
-### Quick Start Guide
+## 🖼️ Screenshots
 
-1. **Search Packages**: Use the search bar to find packages across repositories
-2. **Browse by Repository**: Switch to the Repositories tab to explore packages by source
-3. **Install Packages**: Select packages and click Install (requires sudo password)
-4. **System Updates**: Use the Updates tab to manage system-wide updates
-5. **Local Packages**: Use "Browse PKG" to install local package files
+<p align="center">
+  <img width="1366" height="768" alt="PKGER screenshot 1" src="https://github.com/user-attachments/assets/18299fa1-0a62-4849-bdb2-a7fae5ca9cf3" />
+  <img width="1366" height="768" alt="PKGER screenshot 2" src="https://github.com/user-attachments/assets/9c8e44bb-a16f-4a4b-937b-4711c84fd3a5" />
+  <img width="1366" height="768" alt="PKGER screenshot 3" src="https://github.com/user-attachments/assets/c379076f-4cd3-4326-a1f7-f4cc8008af5c" />
+  <img width="1366" height="768" alt="PKGER screenshot 4" src="https://github.com/user-attachments/assets/a975d444-fab9-45a0-a88b-cfd86224af2e" />
+  <img width="1366" height="768" alt="PKGER screenshot 5" src="https://github.com/user-attachments/assets/6d60eda6-01d9-4d01-8548-f160e3b7ff44" />
+</p>
 
-### Key Features Walkthrough
+---
 
-#### Package Management
-- Search across Official, AUR, and Installed packages
-- View detailed package information including dependencies
-- Install, remove, or reinstall packages with one click
-- Handle local package files with drag-and-drop support
+## 🐞 Issues & Feedback
 
-#### System Maintenance
-- Check for and apply system updates selectively
-- Clean package cache to free disk space
-- Remove orphaned packages automatically
-- Fix broken dependencies with built-in recovery tools
-
-#### Advanced Operations
-- Export package lists for backup or documentation
-- Copy package details to clipboard
-- Open package homepages directly from the interface
-- Filter and sort packages by various criteria
-
-## 🏗️ Architecture
-
-PKGER is built with modern Python and GTK technologies:
-
-- **Frontend**: GTK 3.0 with PyGObject bindings
-- **Backend**: Native pacman/yay integration
-- **Threading**: Asynchronous operations for responsive UI
-- **Caching**: Intelligent package information caching
-- **Security**: Safe credential handling and operation validation
-
-
-### Development Setup
-```bash
-git clone https://github.com/almezali/pkger-g.git
-cd pkger-g
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements-dev.txt
-```
-
-### Report Issues
-Found a bug or have a feature request? Please create an issue on our [GitHub Issues](https://github.com/almezali/pkger-g/issues) page.
-
-## 📜 License
-
-This project is licensed under the GPL-3.0 License.
-
-## 👨‍💻 Author
-
-**almezali** - *Developer and Maintainer*
-
-## 🙏 Acknowledgments
-
-- Arch Linux community for the robust package management system
-- GTK developers for the excellent UI toolkit
-- PyGObject maintainers for Python bindings
-- AUR helpers developers (especially yay team)
+Found a bug or have an idea? Please [open an issue](https://github.com/almezali/pkger-g/issues).
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for the Arch Linux community**
-
-[Report Bug](https://github.com/almezali/pkger-g/issues) • [Request Feature](https://github.com/almezali/pkger-g/issues) • [Documentation](https://github.com/almezali/pkger-g/wiki)
+Made with ❤️ by [almezali](https://github.com/almezali)
 
 </div>
